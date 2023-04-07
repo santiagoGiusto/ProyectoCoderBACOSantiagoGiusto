@@ -28,12 +28,25 @@
         .catalogo-img {
             width: 50%;
             transition: 0.5s;
+            position: relative;
+
 
             img {
                 width: 90%;
                 border-radius: 5px;
             }
+
+            button {
+                @extend %btn;
+                position: absolute;
+                bottom: 10%;
+                left: 35%;
+                padding: .5% 3%;
+                display: none;
+            }
         }
+
+
 
     }
 }
@@ -55,7 +68,7 @@
 }
 
 .sake-div {
-    background-color: $bg-color;
+    background-image: radial-gradient($bg-color, $bg-color2);
     text-align: center;
     justify-content: center;
 
@@ -68,6 +81,7 @@
         padding-left: 12%;
         margin: 0;
     }
+
     .sake-flex {
         .sake-flex1 {
             display: flex;
@@ -75,30 +89,30 @@
             margin: auto;
             margin-bottom: 3%;
             width: 95%;
-    
+
             .sake-img1 {
                 width: 60%;
                 height: 60%;
                 border-radius: 10px;
                 transition: 0.5s;
             }
-    
+
             .sake-img1-2 {
                 width: 18%;
                 border-radius: 10px;
                 transition: 0.5s;
             }
-    
+
             .sake-img1-3 {
                 width: 18%;
                 border-radius: 10px;
                 transition: 0.5s;
             }
         }
-    
+
         .sake-flex2 {
             p {
-                margin:auto;
+                margin: auto;
                 width: 90%;
                 text-align: justify;
                 color: white;
@@ -108,22 +122,23 @@
                 line-height: 2;
             }
         }
-    
+
         .sake-flex3,
         .sake-flex4 {
             display: none;
         }
-    
-    }
-    
-}
 
+    }
+
+}
 
 @media (min-width: 480px) {
     .vinos-catalogo-titulo {
         font-size: 25px;
-        margin: 1.5% 0 1% 0;
+        margin: 1.5% 0 60% 0;
     }
+
+
 }
 
 @media (min-width: 768px) {
@@ -181,7 +196,7 @@
             text-align: center;
             font-size: 30px;
             font-weight: 300;
-            margin: 1.5% 0 1% 0;
+            margin: 1.5% 0 2% 0;
         }
 
         .catalogo-productos {
@@ -193,8 +208,16 @@
                     ;
                 }
 
+                &:hover h4 {
+                    font-weight: 400;
+                }
+
                 &:hover img {
                     border: solid black 1px;
+                }
+
+                &:hover button {
+                    display: block;
                 }
             }
 
@@ -214,8 +237,9 @@
         .video-vino {
             margin-top: 0;
             line-height: 0;
-            margin-bottom: 0;   
+            margin-bottom: 0;
         }
+
         .video-vino-texto {
             top: 7%;
 
@@ -321,13 +345,16 @@
         }
 
     }
+
     .vinos-catalogo .catalogo-productos h4 {
         font-size: 22px;
     }
+
     .sake-div {
         h2 {
             font-size: 40px;
         }
+
         .sake-flex {
             .sake-flex2 {
                 p {
@@ -343,6 +370,7 @@
     .video-div .video-vino-texto {
         line-height: 2;
     }
+
     .sake-div .sake-flex .sake-flex2 p {
         font-size: 18px;
         line-height: 2;

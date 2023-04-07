@@ -14,8 +14,8 @@
   font-size: 16px;
   text-align: center;
   width: 100%;
-  background-color:$bg-color;
-  color: white;
+  background-image: radial-gradient($bg-color,$bg-color2);
+  color: $font-color1;
   margin: 0.2% 0 0 0;
 }
 
@@ -24,13 +24,14 @@
 }
 
 .precaucion {
-  background-color:$bg-color;
-  color: rgb(255, 255, 255);
+  background-image: radial-gradient($bg-color,$bg-color2);
+  color: $font-color1;
   font-size: 10px;
   font-weight: 50;
   text-align: center;
   padding: 1% 0;
   margin: 0%;
+  width: 100%;
 }
 
 .precaucion-banner {
@@ -39,7 +40,7 @@
   .precaucion-h2 {
     display: none;
     position: absolute;
-    color: white;
+    color: $font-color1;
     top: 65%;
     left: 15%;
     font-size: 16px;
@@ -50,7 +51,7 @@
   .precaucion-h3 {
     display: none;
     position: absolute;
-    color: white;
+    color: $font-color1;
     top: 18%;
     left: 69.5%;
     font-size: 26px;

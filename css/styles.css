@@ -1,3 +1,11 @@
+.destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion .btn-destilados, .vinos-catalogo .catalogo-productos .catalogo-img button {
+  display: block;
+  padding: 2%;
+  border-radius: 5px;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +34,7 @@ body {
 }
 .header a {
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #1f1f1f;
 }
 .header h1 {
   font-size: 35px;
@@ -44,7 +52,7 @@ body {
   display: flex;
   width: 100%;
   height: 20px;
-  background-color: #232323;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
   text-align: center;
   justify-content: end;
   position: relative;
@@ -63,7 +71,7 @@ body {
   display: none;
   list-style: none;
   position: fixed;
-  background-color: #232323;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
   width: 100vw;
   height: 100vh;
   z-index: 5;
@@ -73,7 +81,7 @@ body {
 .navegador ul li a {
   display: block;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 16px;
   padding: 12px;
   text-align: start;
@@ -134,7 +142,7 @@ body {
   text-align: center;
   width: 100%;
   padding: 10px 0;
-  background-color: #232323;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
   color: white;
   margin-top: 0.2%;
   margin-bottom: 0;
@@ -170,7 +178,7 @@ body {
   font-size: 16px;
   text-align: center;
   width: 100%;
-  background-color: #232323;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
   color: white;
   margin: 0.2% 0 0 0;
 }
@@ -180,13 +188,14 @@ body {
 }
 
 .precaucion {
-  background-color: #232323;
-  color: rgb(255, 255, 255);
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
+  color: white;
   font-size: 10px;
   font-weight: 50;
   text-align: center;
   padding: 1% 0;
   margin: 0%;
+  width: 100%;
 }
 
 .precaucion-banner {
@@ -284,6 +293,7 @@ body {
 }
 .nosotros .nosotros-texto {
   margin-top: 1%;
+  color: #1f1f1f;
 }
 .nosotros .nosotros-texto h2 {
   font-size: 15px;
@@ -349,10 +359,18 @@ body {
 .vinos-catalogo .catalogo-productos .catalogo-img {
   width: 50%;
   transition: 0.5s;
+  position: relative;
 }
 .vinos-catalogo .catalogo-productos .catalogo-img img {
   width: 90%;
   border-radius: 5px;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img button {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  padding: 0.5% 3%;
+  display: none;
 }
 
 .video-div {
@@ -367,7 +385,7 @@ body {
 }
 
 .sake-div {
-  background-color: #232323;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
   text-align: center;
   justify-content: center;
 }
@@ -421,7 +439,7 @@ body {
 @media (min-width: 480px) {
   .vinos-catalogo-titulo {
     font-size: 25px;
-    margin: 1.5% 0 1% 0;
+    margin: 1.5% 0 60% 0;
   }
 }
 @media (min-width: 768px) {
@@ -473,7 +491,7 @@ body {
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-    margin: 1.5% 0 1% 0;
+    margin: 1.5% 0 2% 0;
   }
   .vinos-catalogo .catalogo-productos .catalogo-img {
     width: 24%;
@@ -481,8 +499,14 @@ body {
   .vinos-catalogo .catalogo-productos .catalogo-img:hover {
     scale: 1.1;
   }
+  .vinos-catalogo .catalogo-productos .catalogo-img:hover h4 {
+    font-weight: 400;
+  }
   .vinos-catalogo .catalogo-productos .catalogo-img:hover img {
     border: solid black 1px;
+  }
+  .vinos-catalogo .catalogo-productos .catalogo-img:hover button {
+    display: block;
   }
 }
 @media (min-width: 1024px) {
@@ -662,10 +686,14 @@ body {
 .destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion h3 {
   font-weight: 500;
   line-height: 1;
-  padding: 3%;
   text-align: center;
+  border: solid 1px black;
+  padding: 3%;
+  border-left: 0;
+  border-right: 0;
 }
-.destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion p {
+.destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion p,
+.destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion .p2 {
   line-height: 1.3;
   font-weight: 500;
   font-size: 16px;
@@ -673,13 +701,20 @@ body {
   text-align: justify;
   display: none;
 }
+.destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion .btn-destilados {
+  bottom: 20%;
+  position: absolute;
+  padding: 10% 5%;
+  font-size: 16px;
+}
 .destilados-catalogo .destilados-flex2 {
   display: none;
   text-align: center;
   width: 35%;
   margin: 5% 0;
 }
-.destilados-catalogo .destilados-flex2 p {
+.destilados-catalogo .destilados-flex2 p,
+.destilados-catalogo .destilados-flex2 .p2 {
   display: none;
   font-weight: 200;
   font-size: 16px;
@@ -707,7 +742,8 @@ body {
     display: none;
   }
   .destilados-catalogo .destilados-grilla {
-    width: 65%;
+    width: 66%;
+    margin-left: 2%;
   }
   .destilados-catalogo .destilados-grilla .tequila {
     grid-area: tequila;
@@ -746,36 +782,66 @@ body {
     border: none;
   }
   .destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion p {
-    display: block;
+    display: none;
     line-height: 1;
     font-size: 16px;
   }
-  .destilados-catalogo .destilados-flex2 {
-    display: block;
+  .destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion .btn-destilados {
+    padding: 10%;
+    border-radius: 10px;
+    bottom: 10%;
   }
-  .destilados-catalogo .destilados-flex2 h3 {
+  .destilados-catalogo .destilados-flex2 {
+    width: 34%;
+    margin-top: 3%;
     display: block;
-    font-size: 35px;
   }
   .destilados-catalogo .destilados-flex2 p {
     display: block;
     width: 80%;
-    padding: 15% 0 40%;
+    padding: 25% 0;
+    font-size: 25px;
+  }
+  .destilados-catalogo .destilados-flex2 h3 {
+    margin-left: 7%;
+    display: block;
+    padding: 10% 0;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .destilados-catalogo .destilados-flex2 .p2 {
+    display: none;
+    width: 80%;
+    padding: 40% 0;
     font-size: 25px;
   }
 }
 @media (min-width: 1024px) {
+  .destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion h3 {
+    position: absolute;
+    top: 10%;
+  }
   .destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion p {
-    line-height: 2;
+    display: block;
+    line-height: 1.5;
     font-size: 18px;
   }
-  .destilados-flex2 h3 {
+  .destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion .btn-destilados {
+    padding: 10%;
+    border-radius: 10px;
+  }
+  .destilados-catalogo .destilados-flex2 h3 {
     margin: auto;
-    font-weight: 400;
     font-size: 28px;
   }
-  .destilados-flex2 p {
+  .destilados-catalogo .destilados-flex2 p {
     font-size: 19px;
+  }
+  .destilados-catalogo .destilados-flex2 .p2 {
+    display: block;
+    font-size: 19px;
+    padding: 16% 6%;
+    line-height: 2;
   }
 }
 @media (min-width: 1200px) {
@@ -783,23 +849,37 @@ body {
     line-height: 2;
     font-size: 20px;
   }
-  .destilados-flex2 h3 {
-    margin: auto;
-    font-weight: 400;
-    font-size: 32px;
+  .destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion .btn-destilados {
+    padding: 6% 12%;
+    border-radius: 10px;
+    bottom: 10%;
   }
-  .destilados-flex2 p {
+  .destilados-catalogo .destilados-flex2 h3 {
+    margin: auto;
+    font-size: 32px;
+    padding: 30% 0;
+  }
+  .destilados-catalogo .destilados-flex2 p {
     font-size: 22px;
+  }
+  .destilados-catalogo .destilados-flex2 .p2 {
+    display: block;
+    font-size: 22px;
+    padding: 25% 6%;
   }
 }
 @media (min-width: 1400px) {
   .destilados-flex2 h3 {
     margin: auto;
-    font-weight: 400;
     font-size: 40px;
+    padding: 35% 0;
   }
   .destilados-flex2 p {
     font-size: 25px;
+    line-height: 2;
+  }
+  .destilados-flex2 .p2 {
+    line-height: 2;
   }
 }
 .formulario {
@@ -831,7 +911,7 @@ body {
 }
 .formulario button {
   width: 100px;
-  background-color: #232323;
+  background-color: #1f1f1f;
   color: white;
   border-radius: 10px;
   border: none;
@@ -940,6 +1020,7 @@ body {
 .footer-div {
   background-color: white;
   margin: 0;
+  color: #1f1f1f;
 }
 .footer-div .footer-icono {
   width: 50%;
