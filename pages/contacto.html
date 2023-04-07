@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACO - inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a class="icono" href="../index.html"> <img src="../multimedia/img/logo.png" alt="icono"></a>
+            <a href="../index.html"><h1>BACO <span>BEBIDAS</span></h1></a>
+        </div>
+
+        <nav class="navegador">
+            <i class="fa-solid fa-bars"></i> 
+            <ul class="nav">
+                <li><a class="inicio" href="../index.html">INICIO</a></li>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="./vinos.html">VINOS Y ESPUMANTES</a></li>
+                <li><a href="./destilados.html">DESTILADOS</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+                <li><a class="pie" href="#pie">·</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="titulo"> CONTACTO </h2>
+        <img class="cebra-dos" src="../multimedia/img/cebra-uno.png" alt="cebra">
+        
+        <div class="contacto-flex">
+            <form class="formulario" action="contacta">
+                <h2>Contactanos:</h2>
+                <label>
+                    Nombre: <input type="text" name="nombre" required>
+                </label>
+                <label>
+                    Apellido: <input type="text" name="apellido" required>
+                </label>
+                <label>
+                    Mail: <input type="text" name="mail" required>
+                </label>
+                <label>
+                    Asunto: <input type="text" name="asunto" required>
+                </label>
+                <label>
+                    Mensaje: <textarea name="mensaje" rows="5"></textarea>
+                </label>
+                <div class="boton"><button type="submit">Enviar</button></div>
+            </form>
+            <div class="mapa-div">
+                <h3>Visitanos en:</h3>
+                <iframe class="mapa-img" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13152.362617795525!2d-58.56582120000001!3d-34.50058595000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1680724788442!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <img class="cebra-dos" src="../multimedia/img/cebra-dos.png" alt="cebra">
+    </main>
+      
+    <footer class="row row-cols-1 row-cols-2 row-cols-md-5 pt-4 footer-div justify-content-center">
+        <div class="col mb-3 flex-column m-auto">
+          <a href="../index.html" class="d-flex mb-3 link-dark align-items-center text-decoration-none">
+            <img class="footer-icono" src="../multimedia/img/logo.png" alt="">
+          </a>
+          <p class="text-muted">BACO todos los derechos reservados ©2023</p>
+        </div>
+        <div class="col mb-3 d-none d-md-block">
+          <h5>Nuestra página</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted">INICIO</a></li>
+            <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 text-muted">NOSOTROS</a></li>
+            <li class="nav-item mb-2"><a href="./destilados.html" class="nav-link p-0 text-muted">DESTILADOS</a></li>
+            <li class="nav-item mb-2"><a href=".vinos.html" class="nav-link p-0 text-muted">VINOS Y ESPUMANTES</a></li>
+          </ul>
+        </div>
+        <div class="col mb-3 d-none d-md-block">
+          <h5>Privacidad y Accesibilidad</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a
+                href="https://footer.diageohorizon.com/dfs/assets/www.johnniewalker.com/TnC_uen.html?locale=uen-us"
+                class="nav-link p-0 text-muted">Terminos y Condiciones</a></li>
+            <li class="nav-item mb-2"><a
+                href="https://footer.diageohorizon.com/dfs/assets/www.johnniewalker.com/PrivacyPolicy_uen.html?locale=uen-us"
+                class="nav-link p-0 text-muted">Politica de privacidad y cookies</a></li>
+            <li class="nav-item mb-2"><a
+                href="https://footer.diageohorizon.com/dfs/assets/www.johnniewalker.com/www.johnniewalker.com_uen-us_final_accessibility.html"
+                class="nav-link p-0 text-muted">Accesibilidad</a></li>
+          </ul>
+        </div>
+        <div class="col mb-3 redes-footer">
+          <h5>Redes</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://www.instagram.com/" class="nav-link p-0 text-muted"><img src="../multimedia/img/-footer/footer-instagram.png" alt="Instagram"> INSTAGRAM</a></li>
+            <li class="nav-item mb-2"><a href="https://twitter.com/?lang=es" class="nav-link p-0 text-muted"><img src="../multimedia/img/-footer/footer-facebook.png" alt="Facebook"> FACEBOOK</a></li>
+            <li class="nav-item mb-2"><a href="https://web.whatsapp.com/" class="nav-link p-0 text-muted"><img src="../multimedia/img/-footer/footer-wassap.png" alt="Whatsapp"> WHATSAPP</a></li>
+            <li class="nav-item mb-2"><a href="https://www.youtube.com/" class="nav-link p-0 text-muted"><img src="../multimedia/img/-footer/footer-youtube.png" alt="YouTube">YOUTUBE</a></li>
+          </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script></body>
+</html>

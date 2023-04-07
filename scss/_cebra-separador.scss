@@ -1,0 +1,34 @@
+.cebra {
+    display: none;
+}
+
+.cebra-dos {
+    display: block;
+    width: 100%;
+    height: 25px;
+}
+
+.vino-cebra {
+    display: none;
+  }
+
+
+@media (min-width: 768px) {
+    .cebra {
+        display: block;
+        width: 100%;
+        height: 35px;
+    }
+    .vino-cebra {
+        display: block;
+      }
+
+}
+
+@media (min-width: 1024px) {
+    .cebra-dos {
+        display: block;
+        width: 100%;
+        height: 35px;
+    }
+}
