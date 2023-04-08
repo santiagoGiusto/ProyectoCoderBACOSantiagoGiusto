@@ -22,8 +22,8 @@
         gap: 1%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "tequila   vodka     ron      "
-            "gin       grapa     brandy   "
-            "anis      singani    pisco    ";
+                             "gin       grapa     brandy   "
+                             "anis      singani    pisco   ";
         background-color: rgb(255, 255, 255);
         grid-area: bebida;
 
@@ -106,18 +106,28 @@
         width: 35%;
         margin: 5% 0;
 
+        p {
+            font-weight: 400;
+        }
+
         p,
         .p2 {
             display: none;
-            font-weight: 200;
             font-size: 16px;
             text-align: justify;
-            font-style: italic;
             border-bottom: solid black 1px;
             border-top: solid black 1px;
             margin: auto;
             width: 80%;
             padding: 20% 0;
+        }
+
+        .p2 { 
+            font-style: italic;
+            font-weight: 200;
+
+
+
         }
 
         h3 {
