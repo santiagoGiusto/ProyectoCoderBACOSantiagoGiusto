@@ -2,8 +2,7 @@
     display: block;
     text-align: center;
     padding: 2%;
-    text-decoration: underline;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -11,7 +10,7 @@
     width: 100%;
     height: fit-content;
     display: flex;
-    margin: 1% 0 6.5% 0;
+    margin: 1% 0 5% 0;
     justify-content: center;
 
     .destilados-grilla {
@@ -149,6 +148,8 @@
     }
 
     .destilados-catalogo {
+        margin: 1% 0 2.5% 0;
+
         .destilados-grilla {
             width: 66%;
             margin-left: 2%;

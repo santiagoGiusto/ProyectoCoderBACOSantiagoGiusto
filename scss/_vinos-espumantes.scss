@@ -30,6 +30,14 @@
             transition: 0.5s;
             position: relative;
 
+            &:hover img {
+                border: solid black 1px;
+            }
+
+            &:hover button {
+                display: block;
+            }
+
 
             img {
                 width: 90%;
@@ -202,7 +210,6 @@
         .catalogo-productos {
             .catalogo-img {
                 width: 24%;
-
                 &:hover {
                     scale: 1.1;
                     ;

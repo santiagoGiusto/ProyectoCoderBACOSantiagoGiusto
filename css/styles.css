@@ -185,9 +185,9 @@ body {
   font-size: 16px;
   text-align: center;
   width: 100%;
-  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
+  background-color: #1f1f1f;
   color: white;
-  margin: 0.2% 0 0 0;
+  margin: auto;
 }
 
 .carousel-inner .carousel-logo {
@@ -251,6 +251,8 @@ body {
   }
   .tienda {
     font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    color: #1f1f1f;
   }
   .carousel-inner .carousel-logo {
     display: block;
@@ -292,7 +294,6 @@ body {
 }
 .destilados {
   width: 100%;
-  height: 40vh;
   filter: saturate(50%);
 }
 
@@ -373,6 +374,12 @@ body {
   width: 50%;
   transition: 0.5s;
   position: relative;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img:hover img {
+  border: solid black 1px;
+}
+.vinos-catalogo .catalogo-productos .catalogo-img:hover button {
+  display: block;
 }
 .vinos-catalogo .catalogo-productos .catalogo-img img {
   width: 90%;
@@ -636,8 +643,7 @@ body {
   display: block;
   text-align: center;
   padding: 2%;
-  text-decoration: underline;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -645,7 +651,7 @@ body {
   width: 100%;
   height: fit-content;
   display: flex;
-  margin: 1% 0 6.5% 0;
+  margin: 1% 0 5% 0;
   justify-content: center;
 }
 .destilados-catalogo .destilados-grilla {
@@ -758,6 +764,9 @@ body {
 @media (min-width: 768px) {
   .titulo-mb {
     display: none;
+  }
+  .destilados-catalogo {
+    margin: 1% 0 2.5% 0;
   }
   .destilados-catalogo .destilados-grilla {
     width: 66%;
@@ -900,12 +909,16 @@ body {
     line-height: 2;
   }
 }
+.contacto-flex {
+  margin: 4% 0;
+}
+
 .formulario {
   display: grid;
   width: 90%;
   margin: auto;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   grid-template-columns: 1fr;
   grid-template-areas: "contactanos" "nombre" "apellido" "mail" "asunto" "mensaje" "boton";
   border: 1px solid black;
