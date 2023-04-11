@@ -221,8 +221,8 @@ body {
   display: block;
   position: absolute;
   color: white;
-  top: 25%;
-  left: 37%;
+  top: 40%;
+  left: 40%;
   font-size: 19px;
   font-weight: 700;
   font-style: italic;
@@ -244,8 +244,6 @@ body {
     margin: 0;
   }
   .precaucion-banner .precaucion-h3 {
-    top: 26%;
-    left: 40%;
     font-size: 29px;
     font-weight: 800;
   }
