@@ -10,7 +10,7 @@
     margin-bottom: 5%;
     grid-template-columns: 1fr;
     grid-template-areas: "contactanos" "nombre" "apellido" "mail" "asunto" "mensaje" "boton";
-    border: 1px solid black;
+    @include border (1px, solid, black);
     border-radius: 10px;
     padding: 10px;
 
@@ -109,7 +109,7 @@
         width: 35%;
         height: 92%;
         text-align: center;
-        border: solid black 1px;
+        @include border (1px, solid, black);
         border-radius: 10px;
         margin: 1%;
 

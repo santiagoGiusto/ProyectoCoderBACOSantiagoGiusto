@@ -14,7 +14,7 @@
   font-size: 16px;
   text-align: center;
   width: 100%;
-  background-color: $bg-color;
+  background-image: radial-gradient($bg-color,$bg-color2);
   color: $font-color1;
   margin: auto;
 }
@@ -23,19 +23,21 @@
   display: none;
 }
 
-.precaucion {
-  background-image: radial-gradient($bg-color,$bg-color2);
-  color: $font-color1;
-  font-size: 10px;
-  font-weight: 50;
-  text-align: center;
-  padding: 1% 0;
-  margin: 0%;
-  width: 100%;
-}
+
 
 .precaucion-banner {
   position: relative;
+
+  .precaucion {
+    background-image: radial-gradient($bg-color,$bg-color2);
+    color: $font-color1;
+    font-size: 10px;
+    font-weight: 50;
+    text-align: center;
+    padding: 1% 0;
+    margin: 0%;
+    width: 100%;
+  }
 
   .precaucion-h2 {
     display: none;
@@ -49,12 +51,12 @@
   }
 
   .precaucion-h3 {
-    display: none;
+    display: block;
     position: absolute;
     color: $font-color1;
-    top: 18%;
-    left: 69.5%;
-    font-size: 26px;
+    top: 25%;
+    left: 37%;
+    font-size: 19px;
     font-weight: 700;
     font-style: italic;
   }
@@ -74,9 +76,18 @@
     font-size: 20px;
   }
 
-  .precaucion {
-    font-size: 15px;
-    margin: 0;
+  .precaucion-banner {
+    .precaucion {
+      font-size: 15px;
+      margin: 0;
+    }
+    .precaucion-h3 {
+      top: 26%;
+      left: 40%;
+      font-size: 29px;
+      font-weight: 800;
+      
+    }
   }
 }
 
@@ -87,6 +98,7 @@
 
   .tienda {
     font-size: 25px;
+    background-image: none;
     background-color: $bg-color3;
     color: $font-color2;
   }
@@ -113,7 +125,13 @@
       display: inline-block;
     }
 
-    .precaucion-h3,
+    .precaucion-h3 {
+      display: block;
+      top: 18%;
+      left: 69.5%;
+      font-size: 26px;
+      font-weight: 700;
+    }
     .precaucion-h2 {
       display: block;
     }
@@ -121,20 +139,26 @@
 }
 
 @media (min-width: 1024px) {
-  .precaucion-h3 {
-    font-size: 35px;
+  .precaucion-banner {
+    .precaucion-h3 {
+      font-size: 35px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
-  .precaucion-h3 {
-    font-size: 40px;
+  .precaucion-banner {
+    .precaucion-h3 {
+      font-size: 40px;
+    }
   }
 }
 
 @media (min-width: 1400px) {
-  .precaucion-h3 {
-    left: 68.5%;
-    font-size: 50px;
+  .precaucion-banner {
+    .precaucion-h3 {
+      left: 70%;
+      font-size: 45px;
+    }
   }
 }

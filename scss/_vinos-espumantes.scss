@@ -8,7 +8,6 @@
         margin: 2%;
     }
 
-
     .catalogo-productos {
         width: 100%;
         display: flex;
@@ -31,7 +30,7 @@
             position: relative;
 
             &:hover img {
-                border: solid black 1px;
+                @include border (1px, solid, black);
             }
 
             &:hover button {
@@ -53,9 +52,6 @@
                 display: none;
             }
         }
-
-
-
     }
 }
 
@@ -137,7 +133,6 @@
         }
 
     }
-
 }
 
 @media (min-width: 480px) {
@@ -145,8 +140,6 @@
         font-size: 25px;
         margin: 1.5% 0 60% 0;
     }
-
-
 }
 
 @media (min-width: 768px) {
@@ -210,9 +203,9 @@
         .catalogo-productos {
             .catalogo-img {
                 width: 24%;
+
                 &:hover {
                     scale: 1.1;
-                    ;
                 }
 
                 &:hover h4 {
@@ -227,10 +220,8 @@
                     display: block;
                 }
             }
-
         }
     }
-
 }
 
 @media (min-width: 1024px) {
@@ -338,7 +329,6 @@
             }
         }
     }
-
 }
 
 @media (min-width: 1200px) {

@@ -1,11 +1,3 @@
-.destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion .btn-destilados, .vinos-catalogo .catalogo-productos .catalogo-img button {
-  display: block;
-  padding: 2%;
-  border-radius: 5px;
-  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
-  color: white;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +7,14 @@
 body {
   font-family: "Montserrat", sans-serif;
   height: fit-content;
+}
+
+.destilados-catalogo .destilados-grilla .destilados-ficha .ficha-descripcion .btn-destilados, .vinos-catalogo .catalogo-productos .catalogo-img button {
+  display: block;
+  padding: 2%;
+  border-radius: 5px;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
+  color: white;
 }
 
 .header {
@@ -185,7 +185,7 @@ body {
   font-size: 16px;
   text-align: center;
   width: 100%;
-  background-color: #1f1f1f;
+  background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
   color: white;
   margin: auto;
 }
@@ -194,7 +194,10 @@ body {
   display: none;
 }
 
-.precaucion {
+.precaucion-banner {
+  position: relative;
+}
+.precaucion-banner .precaucion {
   background-image: radial-gradient(#1f1f1f, rgb(0, 0, 0));
   color: white;
   font-size: 10px;
@@ -203,10 +206,6 @@ body {
   padding: 1% 0;
   margin: 0%;
   width: 100%;
-}
-
-.precaucion-banner {
-  position: relative;
 }
 .precaucion-banner .precaucion-h2 {
   display: none;
@@ -219,12 +218,12 @@ body {
   text-align: center;
 }
 .precaucion-banner .precaucion-h3 {
-  display: none;
+  display: block;
   position: absolute;
   color: white;
-  top: 18%;
-  left: 69.5%;
-  font-size: 26px;
+  top: 25%;
+  left: 37%;
+  font-size: 19px;
   font-weight: 700;
   font-style: italic;
 }
@@ -240,9 +239,15 @@ body {
   .tienda {
     font-size: 20px;
   }
-  .precaucion {
+  .precaucion-banner .precaucion {
     font-size: 15px;
     margin: 0;
+  }
+  .precaucion-banner .precaucion-h3 {
+    top: 26%;
+    left: 40%;
+    font-size: 29px;
+    font-weight: 800;
   }
 }
 @media (min-width: 768px) {
@@ -251,6 +256,7 @@ body {
   }
   .tienda {
     font-size: 25px;
+    background-image: none;
     background-color: rgb(255, 255, 255);
     color: #1f1f1f;
   }
@@ -271,25 +277,31 @@ body {
   .precaucion-banner .banner3 {
     display: inline-block;
   }
-  .precaucion-banner .precaucion-h3,
+  .precaucion-banner .precaucion-h3 {
+    display: block;
+    top: 18%;
+    left: 69.5%;
+    font-size: 26px;
+    font-weight: 700;
+  }
   .precaucion-banner .precaucion-h2 {
     display: block;
   }
 }
 @media (min-width: 1024px) {
-  .precaucion-h3 {
+  .precaucion-banner .precaucion-h3 {
     font-size: 35px;
   }
 }
 @media (min-width: 1200px) {
-  .precaucion-h3 {
+  .precaucion-banner .precaucion-h3 {
     font-size: 40px;
   }
 }
 @media (min-width: 1400px) {
-  .precaucion-h3 {
-    left: 68.5%;
-    font-size: 50px;
+  .precaucion-banner .precaucion-h3 {
+    left: 70%;
+    font-size: 45px;
   }
 }
 .destilados {
@@ -376,7 +388,9 @@ body {
   position: relative;
 }
 .vinos-catalogo .catalogo-productos .catalogo-img:hover img {
-  border: solid black 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
 }
 .vinos-catalogo .catalogo-productos .catalogo-img:hover button {
   display: block;
@@ -645,6 +659,7 @@ body {
   padding: 2%;
   font-size: 20px;
   font-weight: 500;
+  margin-top: 2%;
 }
 
 .destilados-catalogo {
@@ -671,10 +686,14 @@ body {
   line-height: 0;
   height: fit-content;
   transition: 0.5s;
-  border: solid black 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
 }
 .destilados-catalogo .destilados-grilla .destilados-ficha:hover {
-  border: black solid 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
   scale: 1.05;
   z-index: 10;
 }
@@ -706,7 +725,9 @@ body {
   font-weight: 500;
   line-height: 1;
   text-align: center;
-  border: solid 1px black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
   padding: 3%;
   border-left: 0;
   border-right: 0;
@@ -921,7 +942,9 @@ body {
   margin-bottom: 5%;
   grid-template-columns: 1fr;
   grid-template-areas: "contactanos" "nombre" "apellido" "mail" "asunto" "mensaje" "boton";
-  border: 1px solid black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
   border-radius: 10px;
   padding: 10px;
 }
@@ -1002,7 +1025,9 @@ body {
     width: 35%;
     height: 92%;
     text-align: center;
-    border: solid black 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     border-radius: 10px;
     margin: 1%;
   }

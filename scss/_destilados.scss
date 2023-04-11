@@ -4,6 +4,7 @@
     padding: 2%;
     font-size: 20px;
     font-weight: 500;
+    margin-top: 2%;
 }
 
 .destilados-catalogo {
@@ -32,10 +33,10 @@
             line-height: 0;
             height: fit-content;
             transition: 0.5s;
-            border: solid black 1px;
+            @include border (1px, solid, black);
 
             &:hover {
-                border: black solid 1px;
+                @include border (1px, solid, black);
                 scale: 1.05;
                 z-index: 10;
             }
@@ -71,7 +72,7 @@
                     font-weight: 500;
                     line-height: 1;
                     text-align: center;
-                    border: solid 1px black;
+                    @include border (1px, solid, black);
                     padding: 3%;
                     border-left: 0;
                     border-right: 0;
