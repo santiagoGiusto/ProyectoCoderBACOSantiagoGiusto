@@ -18,28 +18,48 @@
         <a href="./index.html"><h1>BACO <span>BEBIDAS</span></h1></a>
       </div>
 
-      <nav class="navegador">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-bars hambur2"></i> 
-
-        <ul class="nav">
-          <li><a class="inicio" href="./index.html">INICIO</a></li>
-          <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-          <li><a href="./pages/vinos.html">VINOS Y ESPUMANTES</a></li>
-          <li><a href="./pages/destilados.html">DESTILADOS</a></li>
-          <li><a href="./pages/contacto.html">CONTACTO</a></li>
-          <li><a class="pie" href="#pie">·</a>
-        </ul>
+      <nav class="navbar navbar-expand-md bg-body-tertiary navi position-relative">
+        <div class="container-fluid navi-div">
+          <a class="navbar-brand" href="#"> </a>
+          <button class="navbar-toggler position-absolute btn-mb" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-light bg-lignt"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-dark" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/vinos.html">VINOS Y ESPUMANTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/destilados.html">DESTILADOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#pie">.</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
   </header>
+
+
 
   <main>
     <div class="banner-mb">
       <img src="./multimedia/img/inicio-mbf.jpg" alt="">     
     </div>
 
-    <p class="tienda">TIENDA ONLINE DE BEBIDAS ALCOHOLICAS</p>    
     <img class="cebra" src="./multimedia/img/cebra-uno.png" alt="cebra">
+    <p class="tienda-mb">TIENDA ONLINE DE BEBIDAS ALCOHOLICAS</p>
+
 
     <!-- CAROUSEL MB -->
     <section id="carouselExample" class="carousel slide d-block d-md-none">
@@ -93,7 +113,6 @@
             <img src="./multimedia/img/logo.png" class="d-block  w-100" alt="...">
           </div>
         </div>
-
       </div>
       <button class="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -106,9 +125,10 @@
     </section>
 
     <img class="cebra" src="./multimedia/img/cebra-dos.png" alt="cebra">
+    <p class="tienda">TIENDA ONLINE DE BEBIDAS ALCOHOLICAS</p>
 
     <section class="precaucion-banner">
-      <p class="precaucion">Beber con moderacion, prohibida su venta a menores de 18 años</p>    
+      <p class="precaucion">BEBER CON MODERACION, PROHIBIDA SU VETNA A MENORES DE 18 AÑOS</p>    
       <img class="banner3-mbf" src="./multimedia/img/inicio-seis.png" alt="CONCIENCIA AL CONDUCIR">
       <img class="banner3" src="./multimedia/img/inicio-cuatro.png" alt="CONCIENCIA AL CONDUCIR">
       <h2 class="precaucion-h2">SI VAS A MANEJAR NO TOMES NADA DE ALCOHOL</h2>
@@ -161,6 +181,9 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+
 
 </body>
 </html>

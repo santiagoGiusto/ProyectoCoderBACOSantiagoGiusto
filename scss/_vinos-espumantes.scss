@@ -43,13 +43,25 @@
                 border-radius: 5px;
             }
 
-            button {
+            .boton-hover {
                 @extend %btn;
                 position: absolute;
                 bottom: 10%;
-                left: 35%;
+                left: 37%;
                 padding: .5% 3%;
                 display: none;
+            }
+
+            .boton-fantasma {
+                position: absolute;
+                bottom: 10%;
+                left: 37%;
+                padding: .5% 3%;
+                display: block;
+                border-radius: 5px;
+                border-color: white;
+                border-style: double;
+                
             }
         }
     }
@@ -145,7 +157,6 @@
 @media (min-width: 768px) {
     .video-div {
         display: block;
-        width: 100vw;
         height: 75vh;
         position: relative;
         text-align: center;

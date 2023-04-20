@@ -13,6 +13,7 @@
     display: flex;
     margin: 1% 0 5% 0;
     justify-content: center;
+    align-items: center;
 
     .destilados-grilla {
         display: grid;
@@ -20,10 +21,7 @@
         height: fit-content;
         margin: 2% 1%;
         gap: 1%;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "tequila   vodka     ron      "
-                             "gin       grapa     brandy   "
-                             "anis      singani    pisco   ";
+        grid-template-columns: 1fr 1fr 1fr; 
         background-color: rgb(255, 255, 255);
         grid-area: bebida;
 
@@ -96,6 +94,11 @@
                     padding: 10% 5%;
                     font-size: 16px;
                 }
+                .boton-fantasma {
+                    position: absolute;
+                    display: block;
+    
+                }
             }
         }
     }
@@ -104,14 +107,21 @@
         display: none;
         text-align: center;
         width: 35%;
-        margin: 5% 0;
+
+        h3 {
+            display: none;
+            width: 80%;
+            margin: auto;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 2.5;
+            border-top: solid black 1px;
+            border-bottom: solid black 1px;
+            padding: 50% 0;
+        }
 
         p {
             font-weight: 400;
-        }
-
-        p,
-        .p2 {
             display: none;
             font-size: 16px;
             text-align: justify;
@@ -122,24 +132,7 @@
             padding: 20% 0;
         }
 
-        .p2 { 
-            font-style: italic;
-            font-weight: 200;
-
-
-
-        }
-
-        h3 {
-            display: none;
-            width: 80%;
-            margin: auto;
-            font-weight: 300;
-            font-size: 17px;
-            line-height: 2.5;
-            border-bottom: solid black 1px;
-            padding: 50% 0;
-        }
+        
     }
 }
 
@@ -152,6 +145,9 @@
         margin: 1% 0 2.5% 0;
 
         .destilados-grilla {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "tequila   vodka     ron    gin  "
+                                 "grapa     brandy    anis   pisco";
             width: 66%;
             margin-left: 2%;
 
@@ -177,10 +173,6 @@
 
             .pisco {
                 grid-area: pisco;
-            }
-
-            .singani {
-                grid-area: singani;
             }
 
             .brandy {
@@ -215,6 +207,9 @@
                     }
                 }
             }
+            .singani {
+                display: none;
+            }
 
         }
 
@@ -227,22 +222,15 @@
                 display: block;
                 width: 80%;
                 padding: 25% 0;
-                font-size: 25px;
+                font-size: 20px;
             }
 
             h3 {
                 margin-left: 7%;
-                display: block;
+                display: none;
                 padding: 10% 0;
                 font-size: 28px;
                 font-weight: 500;
-            }
-
-            .p2 {
-                display: none;
-                width: 80%;
-                padding: 40% 0;
-                font-size: 25px;
             }
         }
     }
@@ -274,19 +262,13 @@
 
         .destilados-flex2 {
             h3 {
+                display: block;
                 margin: auto;
-                font-size: 28px;
+                font-size: 25px;
             }
 
             p {
                 font-size: 19px;
-            }
-
-            .p2 {
-                display: block;
-                font-size: 19px;
-                padding: 16% 6%;
-                line-height: 2;
             }
         }
     }
@@ -301,8 +283,9 @@
             .destilados-ficha {
                 .ficha-descripcion {
                     p {
-                        line-height: 2;
-                        font-size: 20px;
+                        line-height: 1.5;
+                        font-size: 18px;
+                        margin: auto;
                     }
 
                     .btn-destilados {
@@ -318,18 +301,11 @@
         .destilados-flex2 {
             h3 {
                 margin: auto;
-                font-size: 32px;
-                padding: 30% 0;
+                font-size: 31px;
             }
 
             p {
                 font-size: 22px;
-            }
-
-            .p2 {
-                display: block;
-                font-size: 22px;
-                padding: 25% 6%;
             }
         }
     }
@@ -337,23 +313,30 @@
 }
 
 @media (min-width: 1400px) {
-    .destilados-flex2 {
-        h3 {
-            margin: auto;
-            font-size: 40px;
-            padding: 35% 0;
-        }
-
-        p {
-            font-size: 25px;
-            line-height: 2;
-
-        }
-
-        .p2 {
-            line-height: 2;
+    .destilados-catalogo {
+        .destilados-grilla {
+            .destilados-ficha {
+                .ficha-descripcion {
+                    p {
+                        line-height: 1.5;
+                        font-size: 17px;
+                    }
+                }
+            }
 
         }
 
+        .destilados-flex2 {
+            h3 {
+                margin: auto;
+                font-size: 35px;
+            }
+    
+            p {
+                font-size: 25px;
+                line-height: 2;
+            }
+        }
     }
+    
 }
