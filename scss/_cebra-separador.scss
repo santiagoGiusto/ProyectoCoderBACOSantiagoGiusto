@@ -10,8 +10,7 @@
 
 .vino-cebra {
     display: none;
-  }
-
+}
 
 @media (min-width: 768px) {
     .cebra {
@@ -19,10 +18,10 @@
         width: 100%;
         height: 35px;
     }
+
     .vino-cebra {
         display: block;
-      }
-
+    }
 }
 
 @media (min-width: 1024px) {

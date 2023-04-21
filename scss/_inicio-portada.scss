@@ -17,10 +17,9 @@
   text-align: center;
   width: 100%;
   margin: auto;
-  background-image: radial-gradient($bg-color,$bg-color2);
+  background-image: radial-gradient($bg-color, $bg-color2);
   color: $font-color1;
   padding: 1%;
-
 }
 
 .tienda {
@@ -36,7 +35,7 @@
 
   .precaucion {
     display: none;
-    background-image: radial-gradient($bg-color,$bg-color2);
+    background-image: radial-gradient($bg-color, $bg-color2);
     color: $font-color1;
     font-size: 16px;
     font-weight: 50;
@@ -87,7 +86,7 @@
     .precaucion-h3 {
       font-size: 29px;
       font-weight: 800;
-      
+
     }
   }
 }
@@ -147,6 +146,7 @@
       font-size: 26px;
       font-weight: 700;
     }
+
     .precaucion-h2 {
       display: block;
     }
@@ -166,6 +166,7 @@
     .precaucion-h2 {
       font-size: 20px;
     }
+
     .precaucion-h3 {
       font-size: 40px;
     }
@@ -176,12 +177,14 @@
   .tienda {
     font-size: 30px;
   }
+
   .precaucion-banner {
     .precaucion {
       font-size: 18px;
       font-weight: 50;
       padding: .5%;
     }
+
     .precaucion-h3 {
       left: 70%;
       font-size: 45px;

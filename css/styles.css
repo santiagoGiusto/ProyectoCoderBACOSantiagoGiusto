@@ -320,18 +320,18 @@ body {
   color: #1f1f1f;
 }
 .nosotros .nosotros-texto h2 {
-  font-size: 18px;
+  font-size: 22px;
   text-align: start;
 }
 .nosotros .nosotros-texto p {
   text-align: justify;
-  font-size: 15px;
+  font-size: 16px;
   margin-top: 3%;
 }
 .nosotros .nosotros-texto h3 {
   text-align: end;
-  font-size: 15px;
   margin-top: 5%;
+  font-size: 21px;
 }
 
 @media (min-width: 1024px) {
@@ -350,22 +350,23 @@ body {
   }
   .nosotros .nosotros-texto h2 {
     margin-top: 5%;
-    font-size: 22px;
+    font-size: 28px;
   }
   .nosotros .nosotros-texto p {
     font-size: 18px;
     width: 100%;
   }
   .nosotros .nosotros-texto h3 {
-    font-size: 19px;
+    font-size: 23px;
     width: 100%;
   }
 }
 @media (min-width: 1400px) {
   .nosotros .nosotros-texto h2 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
     margin-bottom: 5%;
+    padding-left: 5%;
   }
   .nosotros .nosotros-texto p {
     font-size: 19px;
@@ -374,6 +375,7 @@ body {
   }
   .nosotros .nosotros-texto h3 {
     width: 95%;
+    font-size: 27px;
   }
 }
 .vinos-catalogo {
@@ -693,7 +695,7 @@ body {
   width: 100%;
   height: fit-content;
   display: flex;
-  margin: 1% 0 5% 0;
+  margin: 0 0 5% 0;
   justify-content: center;
   align-items: center;
 }
@@ -806,6 +808,11 @@ body {
   padding: 20% 0;
 }
 
+@media (min-width: 480px) {
+  .titulo-mb {
+    font-size: 25px;
+  }
+}
 @media (min-width: 768px) {
   .titulo-mb {
     display: none;
@@ -901,7 +908,7 @@ body {
   .destilados-catalogo .destilados-flex2 h3 {
     display: block;
     margin: auto;
-    font-size: 25px;
+    font-size: 28px;
   }
   .destilados-catalogo .destilados-flex2 p {
     font-size: 19px;
@@ -941,10 +948,11 @@ body {
   }
 }
 .contacto-flex {
-  margin: 4% 0;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
 }
-
-.formulario {
+.contacto-flex .formulario {
   display: grid;
   width: 90%;
   margin: auto;
@@ -958,22 +966,22 @@ body {
   border-radius: 10px;
   padding: 10px;
 }
-.formulario .h2 {
+.contacto-flex .formulario .h2 {
   grid-area: contactanos;
   align-content: center;
 }
-.formulario label {
+.contacto-flex .formulario label {
   display: flex;
   flex-direction: column;
   margin: 10px;
 }
-.formulario label input,
-.formulario label textarea {
+.contacto-flex .formulario label input,
+.contacto-flex .formulario label textarea {
   border: none;
   border-bottom: 1px solid rgb(23, 23, 23);
   padding: 20px;
 }
-.formulario button {
+.contacto-flex .formulario button {
   width: 100px;
   background-color: #1f1f1f;
   color: white;
@@ -985,47 +993,62 @@ body {
   justify-content: center;
   align-items: center;
 }
-.formulario button:hover {
+.contacto-flex .formulario button:hover {
   background-color: rgb(67, 67, 67);
 }
-.formulario label:nth-child(2) {
+.contacto-flex .formulario label:nth-child(2) {
   grid-area: nombre;
 }
-.formulario label:nth-child(3) {
+.contacto-flex .formulario label:nth-child(3) {
   grid-area: apellido;
 }
-.formulario label:nth-child(4) {
+.contacto-flex .formulario label:nth-child(4) {
   grid-area: mail;
 }
-.formulario label:nth-child(5) {
+.contacto-flex .formulario label:nth-child(5) {
   grid-area: asunto;
 }
-.formulario label:nth-child(6) {
+.contacto-flex .formulario label:nth-child(6) {
   grid-area: mensaje;
 }
-.formulario .boton {
+.contacto-flex .formulario .boton {
   grid-area: boton;
   display: flex;
   justify-content: end;
 }
-
-.mapa-div {
-  display: none;
-}
-
-.contacto-redes {
+.contacto-flex .mapa-div {
   margin: auto;
+  height: 40vh;
+  width: 90%;
   text-align: center;
   border-width: 1px;
   border-style: solid;
   border-color: black;
   border-radius: 10px;
+}
+.contacto-flex .mapa-div h3 {
+  text-align: start;
+  margin: 2% 0 0 3%;
+}
+.contacto-flex .mapa-div .mapa-img {
+  margin: auto;
   width: 90%;
-  margin-bottom: 2%;
-  margin-top: 5%;
+  height: 30vh;
+  margin: 3% 0;
+}
+
+.contacto-redes {
+  margin: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  width: 87%;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 .contacto-redes h2 {
-  margin-top: 2%;
+  margin: 2% 0 0 3%;
   font-size: 20px;
 }
 .contacto-redes div {
@@ -1039,18 +1062,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 0;
 }
 .contacto-redes div img {
-  width: 50%;
+  width: 65%;
+  margin-bottom: 5%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
+  .contacto-redes div a {
+    text-decoration: none;
+    color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+  .contacto-redes div img {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
   .contacto-flex {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0;
+    margin: 1% 0%;
   }
   .contacto-flex .formulario {
     display: grid;
@@ -1064,37 +1103,25 @@ body {
   .contacto-flex .formulario h2 {
     padding: 5px;
   }
-  .mapa-div {
+  .contacto-flex .mapa-div {
     display: block;
     width: 35%;
     height: 80vh;
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 10px;
     margin: 1%;
   }
-  .mapa-div h3 {
-    text-align: start;
-    margin: 2% 0 0 3%;
-  }
-  .mapa-div .mapa-img {
-    margin: auto;
-    width: 90%;
-    height: 50vh;
-    margin: 3% 0;
+  .contacto-flex .mapa-div .mapa-img {
+    height: 70vh;
   }
   .contacto-redes {
-    width: 90%;
+    width: 98%;
     display: flex;
     align-items: center;
-    height: 125px;
+    height: 130px;
     margin-top: 0;
   }
   .contacto-redes h2 {
     width: 50%;
-    margin: 0;
+    margin: 0 3%;
     font-size: 22px;
   }
   .contacto-redes div {
@@ -1102,7 +1129,7 @@ body {
     width: 50%;
   }
   .contacto-redes div img {
-    width: 60%;
+    width: 55%;
   }
 }
 @media (min-width: 1500px) {
@@ -1110,7 +1137,7 @@ body {
     height: 150px;
   }
   .contacto-redes div img {
-    width: 120px;
+    width: 55%;
   }
 }
 .cebra {

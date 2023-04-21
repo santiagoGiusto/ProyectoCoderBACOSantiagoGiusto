@@ -11,7 +11,7 @@
     width: 100%;
     height: fit-content;
     display: flex;
-    margin: 1% 0 5% 0;
+    margin: 0 0 5% 0;
     justify-content: center;
     align-items: center;
 
@@ -21,7 +21,7 @@
         height: fit-content;
         margin: 2% 1%;
         gap: 1%;
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr;
         background-color: rgb(255, 255, 255);
         grid-area: bebida;
 
@@ -94,10 +94,11 @@
                     padding: 10% 5%;
                     font-size: 16px;
                 }
+
                 .boton-fantasma {
                     position: absolute;
                     display: block;
-    
+
                 }
             }
         }
@@ -131,10 +132,14 @@
             width: 80%;
             padding: 20% 0;
         }
-
-        
     }
 }
+
+@media (min-width: 480px) {
+    .titulo-mb {
+        font-size: 25px;
+    }
+} 
 
 @media (min-width: 768px) {
     .titulo-mb {
@@ -147,7 +152,7 @@
         .destilados-grilla {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-areas: "tequila   vodka     ron    gin  "
-                                 "grapa     brandy    anis   pisco";
+                "grapa     brandy    anis   pisco";
             width: 66%;
             margin-left: 2%;
 
@@ -207,10 +212,10 @@
                     }
                 }
             }
+
             .singani {
                 display: none;
             }
-
         }
 
         .destilados-flex2 {
@@ -264,7 +269,7 @@
             h3 {
                 display: block;
                 margin: auto;
-                font-size: 25px;
+                font-size: 28px;
             }
 
             p {
@@ -272,9 +277,6 @@
             }
         }
     }
-
-
-
 }
 
 @media (min-width: 1200px) {
@@ -295,7 +297,6 @@
                     }
                 }
             }
-
         }
 
         .destilados-flex2 {
@@ -309,7 +310,6 @@
             }
         }
     }
-
 }
 
 @media (min-width: 1400px) {
@@ -323,7 +323,6 @@
                     }
                 }
             }
-
         }
 
         .destilados-flex2 {
@@ -331,12 +330,11 @@
                 margin: auto;
                 font-size: 35px;
             }
-    
+
             p {
                 font-size: 25px;
                 line-height: 2;
             }
         }
     }
-    
 }
