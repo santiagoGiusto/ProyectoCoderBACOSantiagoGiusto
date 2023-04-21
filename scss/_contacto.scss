@@ -149,6 +149,7 @@
         }
     }
 }
+
 @media (min-width: 1024px) {
     .contacto-flex {
         display: flex;
@@ -191,7 +192,7 @@
         width: 98%;
         display: flex;
         align-items: center;
-        height: 130px;
+        height: 125px;
         margin-top: 0;
 
         h2 {
@@ -202,10 +203,10 @@
 
         div {
             justify-content: space-evenly;
-            width: 50%;
+            width: 40%;
 
             img {
-                width: 55%;
+                width: 50%;
             }
         }
     }
@@ -214,11 +215,5 @@
 @media (min-width: 1500px) {
     .contacto-redes {
         height: 150px;
-        
-        div {
-            img {
-                width: 55%;
-            }
-        }
     }
 }

@@ -1116,7 +1116,7 @@ body {
     width: 98%;
     display: flex;
     align-items: center;
-    height: 130px;
+    height: 125px;
     margin-top: 0;
   }
   .contacto-redes h2 {
@@ -1126,18 +1126,15 @@ body {
   }
   .contacto-redes div {
     justify-content: space-evenly;
-    width: 50%;
+    width: 40%;
   }
   .contacto-redes div img {
-    width: 55%;
+    width: 50%;
   }
 }
 @media (min-width: 1500px) {
   .contacto-redes {
     height: 150px;
-  }
-  .contacto-redes div img {
-    width: 55%;
   }
 }
 .cebra {
