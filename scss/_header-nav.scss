@@ -59,7 +59,6 @@
 
         &:hover {
           color: $font-color1;
-          scale: 1.2;
         }
       }
     }
@@ -101,10 +100,14 @@
         width: 100%;
         height: fit-content;
         justify-content: space-evenly;
+        
 
         li a {
           padding: 0;
           font-size: 18px;
+          &:hover {
+            scale: 1.2;
+          }
         }
       }
     }

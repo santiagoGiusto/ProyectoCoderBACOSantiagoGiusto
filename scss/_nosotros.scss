@@ -16,9 +16,8 @@
     margin: 2% 0 5% 0;
     color: $font-color2;
     h2 {
-      font-size: 16px;
+      font-size: 18px;
       text-align: start;
-      margin-left: 10%;
     }
 
     p {
@@ -49,22 +48,21 @@
     }
 
     .nosotros-texto {
-      width: 75%;
+      width: 80%;
 
       h2 {
-        font-size: 25px;
+        margin-top: 5%;
+        font-size: 22px;
       }
 
       p {
         font-size: 18px;
-        width: 95%;
-        margin: auto;
-        margin-top: 4%;
-        margin-left: 10%;
+        width: 100%;
       }
 
       h3 {
         font-size: 19px;
+        width: 100%;
       }
     }
   }
@@ -75,10 +73,13 @@
     .nosotros-texto {
       h2 {
         font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 5%;
       }
       p {
         font-size: 19px;
-        width: 85%;
+        width: 95%;
+        padding-left: 5%;
 
       }
       h3 {

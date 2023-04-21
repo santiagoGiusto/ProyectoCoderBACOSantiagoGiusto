@@ -7,7 +7,7 @@
     width: 90%;
     margin: auto;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     grid-template-columns: 1fr;
     grid-template-areas: "contactanos" "nombre" "apellido" "mail" "asunto" "mensaje" "boton";
     @include border (1px, solid, black);
@@ -42,6 +42,7 @@
         display: flex;
         margin: 0 21px;
         justify-content: center;
+        align-items: center;
 
         &:hover {
             background-color: rgb(67, 67, 67);
@@ -79,18 +80,54 @@
     display: none;
 }
 
+.contacto-redes {
+    margin: auto;
+    text-align: center;
+    @include border (1px, solid, black);
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    h2 {
+        margin-top: 2%;
+    }
+
+    div {
+        margin: 5% 0;
+        display: flex;
+        justify-content: space-between;
+        
+
+        a {
+            text-decoration: none;
+            color: $font-color2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+
+    }
+    
+
 @media (min-width: 768px) {
     .contacto-flex {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 65vh;
+        margin: 0;
 
         .formulario {
             display: grid;
             width: 65%;
-            margin: 4% 0 4% 1%;
+            height: 80vh;
+            margin: 0;
+            margin-left: 1%;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "contactanos contactanos"
                 "nombre      apellido "
@@ -107,7 +144,7 @@
     .mapa-div {
         display: block;
         width: 35%;
-        height: 92%;
+        height: 80vh;
         text-align: center;
         @include border (1px, solid, black);
         border-radius: 10px;
@@ -124,5 +161,40 @@
             height: 50vh;
             margin: 3% 0;
         }
+    }
+
+    .contacto-redes {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        height: 125px;
+        margin-top: 0;
+        h2 {
+            width: 50%;
+            margin: 0;
+        }
+
+        div {
+            justify-content: space-evenly;
+            width: 50%;
+            img {
+                width: 60%;
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .contacto-redes {
+        height: 150px;
+
+        div {
+            img {
+                width: 120px;
+            }
+        }
+        
     }
 }
